@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "record_level": "aggregate_protein_or_regional_evaluation_only",
   "data_license": "CC-BY-4.0",
   "flow": {
@@ -960,6 +960,1128 @@
       "pp4": 0.865344955069242,
       "primary": false,
       "gate_pass": false
+    }
+  ],
+  "assay_precision": [
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|ACOX1",
+      "soma_id": "X21552.9",
+      "protein": "ACOX1",
+      "gene": "ACOX1",
+      "fluid": "CSF",
+      "beta": -0.0439276599296278,
+      "mde_abs_log_or_80pct_nominal": 0.1230670827251386
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|AMD",
+      "soma_id": "X5620.13",
+      "protein": "AMD",
+      "gene": "PAM",
+      "fluid": "CSF",
+      "beta": -0.0086108920090541,
+      "mde_abs_log_or_80pct_nominal": 0.0656904201836037
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|AP4A",
+      "soma_id": "X16583.8",
+      "protein": "AP4A",
+      "gene": "NUDT2",
+      "fluid": "CSF",
+      "beta": 0.0039866797725694,
+      "mde_abs_log_or_80pct_nominal": 0.0420517284058178
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|Apo E",
+      "soma_id": "X2418.55",
+      "protein": "Apo E",
+      "gene": "APOE",
+      "fluid": "CSF",
+      "beta": -0.1870527000650618,
+      "mde_abs_log_or_80pct_nominal": 0.1594916763727289
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|Apo E2",
+      "soma_id": "X5312.49",
+      "protein": "Apo E2",
+      "gene": "APOE",
+      "fluid": "CSF",
+      "beta": -0.0976055979403804,
+      "mde_abs_log_or_80pct_nominal": 0.0832240349027796
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|ARSB",
+      "soma_id": "X3172.28",
+      "protein": "ARSB",
+      "gene": "ARSB",
+      "fluid": "CSF",
+      "beta": 0.0002706201987674,
+      "mde_abs_log_or_80pct_nominal": 0.0263931452739195
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|BCL7A",
+      "soma_id": "X21331.19",
+      "protein": "BCL7A",
+      "gene": "BCL7A",
+      "fluid": "CSF",
+      "beta": -0.020800020730452,
+      "mde_abs_log_or_80pct_nominal": 0.0428648374987324
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|BGAT",
+      "soma_id": "X9253.52",
+      "protein": "BGAT",
+      "gene": "ABO",
+      "fluid": "CSF",
+      "beta": 0.0255679547952098,
+      "mde_abs_log_or_80pct_nominal": 0.0215557411481807
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|BT2A1",
+      "soma_id": "X8869.5",
+      "protein": "BT2A1",
+      "gene": "BTN2A1",
+      "fluid": "CSF",
+      "beta": -0.0285243683330811,
+      "mde_abs_log_or_80pct_nominal": 0.0896589911996733
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|BT3A2",
+      "soma_id": "X21433.3",
+      "protein": "BT3A2",
+      "gene": "BTN3A2",
+      "fluid": "CSF",
+      "beta": 0.0167906122619536,
+      "mde_abs_log_or_80pct_nominal": 0.0449400606544141
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|BT3A3",
+      "soma_id": "X17692.2",
+      "protein": "BT3A3",
+      "gene": "BTN3A3",
+      "fluid": "CSF",
+      "beta": 0.0412019838807506,
+      "mde_abs_log_or_80pct_nominal": 0.1040420610327138
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|COCH",
+      "soma_id": "X7227.75",
+      "protein": "COCH",
+      "gene": "COCH",
+      "fluid": "CSF",
+      "beta": -0.0080821324257397,
+      "mde_abs_log_or_80pct_nominal": 0.0616386863335788
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|COL6A1",
+      "soma_id": "X11150.3",
+      "protein": "COL6A1",
+      "gene": "COL6A1",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|CRBS",
+      "soma_id": "X19311.15",
+      "protein": "CRBS",
+      "gene": "CRYGS",
+      "fluid": "CSF",
+      "beta": 0.0062401297946997,
+      "mde_abs_log_or_80pct_nominal": 0.1627194540326449
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|CTSB",
+      "soma_id": "X8007.19",
+      "protein": "CTSB",
+      "gene": "CTSB",
+      "fluid": "CSF",
+      "beta": 0.0147944523815084,
+      "mde_abs_log_or_80pct_nominal": 0.0364255592810281
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|CTSS",
+      "soma_id": "X3181.50",
+      "protein": "CTSS",
+      "gene": "CTSS",
+      "fluid": "CSF",
+      "beta": 0.0050921172355646,
+      "mde_abs_log_or_80pct_nominal": 0.038588361672939
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|Cystatin M",
+      "soma_id": "X14711.27",
+      "protein": "Cystatin M",
+      "gene": "CST6",
+      "fluid": "CSF",
+      "beta": 0.0131113000347478,
+      "mde_abs_log_or_80pct_nominal": 0.0325216292469928
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|Epo",
+      "soma_id": "X5813.58",
+      "protein": "Epo",
+      "gene": "EPO",
+      "fluid": "CSF",
+      "beta": -0.0638826603295067,
+      "mde_abs_log_or_80pct_nominal": 0.0796428590084306
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|ERO1B",
+      "soma_id": "X7994.41",
+      "protein": "ERO1B",
+      "gene": "ERO1B",
+      "fluid": "CSF",
+      "beta": 0.0154737357976169,
+      "mde_abs_log_or_80pct_nominal": 0.0416585972286414
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|FcRIIIa",
+      "soma_id": "X15388.24",
+      "protein": "FcRIIIa",
+      "gene": "FCGR3A",
+      "fluid": "CSF",
+      "beta": 0.0031237022270186,
+      "mde_abs_log_or_80pct_nominal": 0.0364128956629786
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|GPNMB:CD",
+      "soma_id": "X8606.39",
+      "protein": "GPNMB:CD",
+      "gene": "GPNMB",
+      "fluid": "CSF",
+      "beta": -0.0393157405740512,
+      "mde_abs_log_or_80pct_nominal": 0.0521746094043595
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|GPNMB:ECD",
+      "soma_id": "X5080.131",
+      "protein": "GPNMB:ECD",
+      "gene": "GPNMB",
+      "fluid": "CSF",
+      "beta": -0.0187521603221017,
+      "mde_abs_log_or_80pct_nominal": 0.0446523403025806
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|GPNMB:ECD",
+      "soma_id": "X8240.207",
+      "protein": "GPNMB:ECD",
+      "gene": "GPNMB",
+      "fluid": "CSF",
+      "beta": -0.016884820443574,
+      "mde_abs_log_or_80pct_nominal": 0.0590343440344137
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|HBD-1",
+      "soma_id": "X6629.3",
+      "protein": "HBD-1",
+      "gene": "DEFB1",
+      "fluid": "CSF",
+      "beta": 0.0065723950267624,
+      "mde_abs_log_or_80pct_nominal": 0.0218440542104831
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|HIBCH",
+      "soma_id": "X12396.19",
+      "protein": "HIBCH",
+      "gene": "HIBCH",
+      "fluid": "CSF",
+      "beta": 0.0114122674006081,
+      "mde_abs_log_or_80pct_nominal": 0.0447908491720203
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|HPLN1",
+      "soma_id": "X3196.6",
+      "protein": "HPLN1",
+      "gene": "HAPLN1",
+      "fluid": "CSF",
+      "beta": 0.0025250333279051,
+      "mde_abs_log_or_80pct_nominal": 0.0243450343127637
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|IL-6",
+      "soma_id": "X4673.13",
+      "protein": "IL-6",
+      "gene": "IL6",
+      "fluid": "CSF",
+      "beta": 0.0378296393385997,
+      "mde_abs_log_or_80pct_nominal": 0.1336254458381184
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|KTEL1",
+      "soma_id": "X6467.65",
+      "protein": "KTEL1",
+      "gene": "POGLUT1",
+      "fluid": "CSF",
+      "beta": 0.0087100599212531,
+      "mde_abs_log_or_80pct_nominal": 0.0482493599047886
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|LTF",
+      "soma_id": "X14755.4",
+      "protein": "LTF",
+      "gene": "LTF",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|NET4",
+      "soma_id": "X3327.27",
+      "protein": "NET4",
+      "gene": "NTN4",
+      "fluid": "CSF",
+      "beta": 0.011034172366602,
+      "mde_abs_log_or_80pct_nominal": 0.1019475904061139
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|NovH",
+      "soma_id": "X2737.22",
+      "protein": "NovH",
+      "gene": "CCN3",
+      "fluid": "CSF",
+      "beta": -0.0132106329142909,
+      "mde_abs_log_or_80pct_nominal": 0.1054453290397892
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|PCSK9",
+      "soma_id": "X5231.79",
+      "protein": "PCSK9",
+      "gene": "PCSK9",
+      "fluid": "CSF",
+      "beta": 0.0219477800543306,
+      "mde_abs_log_or_80pct_nominal": 0.0478653586956823
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|PILRA-deltaTM",
+      "soma_id": "X6402.8",
+      "protein": "PILRA-deltaTM",
+      "gene": "PILRA",
+      "fluid": "CSF",
+      "beta": -0.0046143541191783,
+      "mde_abs_log_or_80pct_nominal": 0.0175837961088349
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|PILRA-M14",
+      "soma_id": "X10816.150",
+      "protein": "PILRA-M14",
+      "gene": "PILRA",
+      "fluid": "CSF",
+      "beta": -0.0040432591756784,
+      "mde_abs_log_or_80pct_nominal": 0.0172013499560102
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|PLA2R",
+      "soma_id": "X10916.44",
+      "protein": "PLA2R",
+      "gene": "PLA2R1",
+      "fluid": "CSF",
+      "beta": -0.0030047616462905,
+      "mde_abs_log_or_80pct_nominal": 0.0309254386993682
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|PPAC",
+      "soma_id": "X3858.5",
+      "protein": "PPAC",
+      "gene": "ACP1",
+      "fluid": "CSF",
+      "beta": 0.0011738209453953,
+      "mde_abs_log_or_80pct_nominal": 0.0309796922821672
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|PRSS8",
+      "soma_id": "X15513.108",
+      "protein": "PRSS8",
+      "gene": "PRSS8",
+      "fluid": "CSF",
+      "beta": -0.0391242380865142,
+      "mde_abs_log_or_80pct_nominal": 0.0782927764950788
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|PSMP",
+      "soma_id": "X8080.24",
+      "protein": "PSMP",
+      "gene": "MSMP",
+      "fluid": "CSF",
+      "beta": -0.0296263660347378,
+      "mde_abs_log_or_80pct_nominal": 0.0441251375098815
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|PTPA",
+      "soma_id": "X24717.26",
+      "protein": "PTPA",
+      "gene": "PTPA",
+      "fluid": "CSF",
+      "beta": -0.0940092356325995,
+      "mde_abs_log_or_80pct_nominal": 0.117216294934426
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|SERPIND1",
+      "soma_id": "X3316.58",
+      "protein": "SERPIND1",
+      "gene": "SERPIND1",
+      "fluid": "CSF",
+      "beta": 0.0138391703878658,
+      "mde_abs_log_or_80pct_nominal": 0.1137300712228017
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|TECTB",
+      "soma_id": "X21549.144",
+      "protein": "TECTB",
+      "gene": "TECTB",
+      "fluid": "CSF",
+      "beta": -7.717121205105648e-05,
+      "mde_abs_log_or_80pct_nominal": 0.0358894866730525
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|Tenascin",
+      "soma_id": "X2728.62",
+      "protein": "Tenascin",
+      "gene": "TNC",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|TFPI",
+      "soma_id": "X3336.50",
+      "protein": "TFPI",
+      "gene": "TFPI",
+      "fluid": "CSF",
+      "beta": -0.0080601826974744,
+      "mde_abs_log_or_80pct_nominal": 0.1750049874291413
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|TIMD3",
+      "soma_id": "X11481.25",
+      "protein": "TIMD3",
+      "gene": "HAVCR2",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|TLR1:ECD",
+      "soma_id": "X16324.38",
+      "protein": "TLR1:ECD",
+      "gene": "TLR1",
+      "fluid": "CSF",
+      "beta": 0.0191629677715279,
+      "mde_abs_log_or_80pct_nominal": 0.0244405102817373
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|TM190",
+      "soma_id": "X10442.1",
+      "protein": "TM190",
+      "gene": "TMEM190",
+      "fluid": "CSF",
+      "beta": -0.0015188192364792,
+      "mde_abs_log_or_80pct_nominal": 0.024865255522167
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "CSF|TPSNR",
+      "soma_id": "X6364.7",
+      "protein": "TPSNR",
+      "gene": "TAPBPL",
+      "fluid": "CSF",
+      "beta": -0.0046550352649847,
+      "mde_abs_log_or_80pct_nominal": 0.0280119136882949
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|AMD",
+      "soma_id": "X5620.13",
+      "protein": "AMD",
+      "gene": "PAM",
+      "fluid": "PLASMA",
+      "beta": -0.0013817810536988,
+      "mde_abs_log_or_80pct_nominal": 0.0703911773727064
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|EphB4",
+      "soma_id": "X15530.33",
+      "protein": "EphB4",
+      "gene": "EPHB4",
+      "fluid": "PLASMA",
+      "beta": -0.0278964414117384,
+      "mde_abs_log_or_80pct_nominal": 0.2774053367203072
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|Epo",
+      "soma_id": "X5813.58",
+      "protein": "Epo",
+      "gene": "EPO",
+      "fluid": "PLASMA",
+      "beta": 0.2706222865412446,
+      "mde_abs_log_or_80pct_nominal": 0.3608409325789496
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|FBLN3",
+      "soma_id": "X8480.29",
+      "protein": "FBLN3",
+      "gene": "EFEMP1",
+      "fluid": "PLASMA",
+      "beta": 0.1228832237557829,
+      "mde_abs_log_or_80pct_nominal": 0.1677188006478169
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|HTRA1",
+      "soma_id": "X15594.47",
+      "protein": "HTRA1",
+      "gene": "HTRA1",
+      "fluid": "PLASMA",
+      "beta": 0.0730593607305936,
+      "mde_abs_log_or_80pct_nominal": 0.2967889363480404
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|NMT1",
+      "soma_id": "X5196.7",
+      "protein": "NMT1",
+      "gene": "NMT1",
+      "fluid": "PLASMA",
+      "beta": 0.509761388286334,
+      "mde_abs_log_or_80pct_nominal": 0.5408700312625904
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|PILRA-deltaTM",
+      "soma_id": "X6402.8",
+      "protein": "PILRA-deltaTM",
+      "gene": "PILRA",
+      "fluid": "PLASMA",
+      "beta": 0.0033589662829317,
+      "mde_abs_log_or_80pct_nominal": 0.0309473565240565
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|PILRA-M14",
+      "soma_id": "X10816.150",
+      "protein": "PILRA-M14",
+      "gene": "PILRA",
+      "fluid": "PLASMA",
+      "beta": -0.004724749391269,
+      "mde_abs_log_or_80pct_nominal": 0.029960053703594
+    },
+    {
+      "outcome_source": "HERMES_NO_UKB",
+      "exposure_id": "PLASMA|WBP2",
+      "soma_id": "X17698.15",
+      "protein": "WBP2",
+      "gene": "WBP2",
+      "fluid": "PLASMA",
+      "beta": 0.2552447552447552,
+      "mde_abs_log_or_80pct_nominal": 0.5044812543105518
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|ACOX1",
+      "soma_id": "X21552.9",
+      "protein": "ACOX1",
+      "gene": "ACOX1",
+      "fluid": "CSF",
+      "beta": -0.0817317861606214,
+      "mde_abs_log_or_80pct_nominal": 0.2131126323258472
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|AMD",
+      "soma_id": "X5620.13",
+      "protein": "AMD",
+      "gene": "PAM",
+      "fluid": "CSF",
+      "beta": -0.0272786676349853,
+      "mde_abs_log_or_80pct_nominal": 0.1196245470660303
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|AP4A",
+      "soma_id": "X16583.8",
+      "protein": "AP4A",
+      "gene": "NUDT2",
+      "fluid": "CSF",
+      "beta": -0.029652685475122,
+      "mde_abs_log_or_80pct_nominal": 0.0680298301026836
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|Apo E",
+      "soma_id": "X2418.55",
+      "protein": "Apo E",
+      "gene": "APOE",
+      "fluid": "CSF",
+      "beta": -0.024555112954773,
+      "mde_abs_log_or_80pct_nominal": 0.3183668491908308
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|Apo E2",
+      "soma_id": "X5312.49",
+      "protein": "Apo E2",
+      "gene": "APOE",
+      "fluid": "CSF",
+      "beta": -0.0128130547252756,
+      "mde_abs_log_or_80pct_nominal": 0.1661263733100751
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|ARSB",
+      "soma_id": "X3172.28",
+      "protein": "ARSB",
+      "gene": "ARSB",
+      "fluid": "CSF",
+      "beta": 0.0934614730290438,
+      "mde_abs_log_or_80pct_nominal": 0.6134288714811524
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|BCL7A",
+      "soma_id": "X21331.19",
+      "protein": "BCL7A",
+      "gene": "BCL7A",
+      "fluid": "CSF",
+      "beta": 0.0150543407305678,
+      "mde_abs_log_or_80pct_nominal": 0.1372532706651556
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|BGAT",
+      "soma_id": "X9253.52",
+      "protein": "BGAT",
+      "gene": "ABO",
+      "fluid": "CSF",
+      "beta": 0.0154320759119845,
+      "mde_abs_log_or_80pct_nominal": 0.0652351434466581
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|BT2A1",
+      "soma_id": "X8869.5",
+      "protein": "BT2A1",
+      "gene": "BTN2A1",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|BT3A2",
+      "soma_id": "X21433.3",
+      "protein": "BT3A2",
+      "gene": "BTN3A2",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|BT3A3",
+      "soma_id": "X17692.2",
+      "protein": "BT3A3",
+      "gene": "BTN3A3",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|COCH",
+      "soma_id": "X7227.75",
+      "protein": "COCH",
+      "gene": "COCH",
+      "fluid": "CSF",
+      "beta": 0.008230118798047,
+      "mde_abs_log_or_80pct_nominal": 0.1073114359569153
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|COL6A1",
+      "soma_id": "X11150.3",
+      "protein": "COL6A1",
+      "gene": "COL6A1",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|CRBS",
+      "soma_id": "X19311.15",
+      "protein": "CRBS",
+      "gene": "CRYGS",
+      "fluid": "CSF",
+      "beta": 0.1007173353715095,
+      "mde_abs_log_or_80pct_nominal": 0.5253491980913088
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|CTSB",
+      "soma_id": "X8007.19",
+      "protein": "CTSB",
+      "gene": "CTSB",
+      "fluid": "CSF",
+      "beta": 0.0031348286842486,
+      "mde_abs_log_or_80pct_nominal": 0.1494453287300427
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|CTSS",
+      "soma_id": "X3181.50",
+      "protein": "CTSS",
+      "gene": "CTSS",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|Cystatin M",
+      "soma_id": "X14711.27",
+      "protein": "Cystatin M",
+      "gene": "CST6",
+      "fluid": "CSF",
+      "beta": -0.0396975290945698,
+      "mde_abs_log_or_80pct_nominal": 0.1297488047002962
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|Epo",
+      "soma_id": "X5813.58",
+      "protein": "Epo",
+      "gene": "EPO",
+      "fluid": "CSF",
+      "beta": -0.0637301351748784,
+      "mde_abs_log_or_80pct_nominal": 0.1857787182080289
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|ERO1B",
+      "soma_id": "X7994.41",
+      "protein": "ERO1B",
+      "gene": "ERO1B",
+      "fluid": "CSF",
+      "beta": 0.0263322672355559,
+      "mde_abs_log_or_80pct_nominal": 0.0985228345314266
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|FcRIIIa",
+      "soma_id": "X15388.24",
+      "protein": "FcRIIIa",
+      "gene": "FCGR3A",
+      "fluid": "CSF",
+      "beta": 0.0048469150206058,
+      "mde_abs_log_or_80pct_nominal": 0.0352568028633411
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|GPNMB:CD",
+      "soma_id": "X8606.39",
+      "protein": "GPNMB:CD",
+      "gene": "GPNMB",
+      "fluid": "CSF",
+      "beta": -0.0148519801555649,
+      "mde_abs_log_or_80pct_nominal": 0.0889187661457792
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|GPNMB:ECD",
+      "soma_id": "X5080.131",
+      "protein": "GPNMB:ECD",
+      "gene": "GPNMB",
+      "fluid": "CSF",
+      "beta": -0.0135555778570149,
+      "mde_abs_log_or_80pct_nominal": 0.0541457690215139
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|GPNMB:ECD",
+      "soma_id": "X8240.207",
+      "protein": "GPNMB:ECD",
+      "gene": "GPNMB",
+      "fluid": "CSF",
+      "beta": -0.0213142216618112,
+      "mde_abs_log_or_80pct_nominal": 0.0827987690001103
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|HBD-1",
+      "soma_id": "X6629.3",
+      "protein": "HBD-1",
+      "gene": "DEFB1",
+      "fluid": "CSF",
+      "beta": 0.0144369824097229,
+      "mde_abs_log_or_80pct_nominal": 0.0471629110191393
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|HIBCH",
+      "soma_id": "X12396.19",
+      "protein": "HIBCH",
+      "gene": "HIBCH",
+      "fluid": "CSF",
+      "beta": -0.0234944408009779,
+      "mde_abs_log_or_80pct_nominal": 0.0906883567111954
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|HPLN1",
+      "soma_id": "X3196.6",
+      "protein": "HPLN1",
+      "gene": "HAPLN1",
+      "fluid": "CSF",
+      "beta": 0.0097407352016335,
+      "mde_abs_log_or_80pct_nominal": 0.0376475061830036
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|IL-6",
+      "soma_id": "X4673.13",
+      "protein": "IL-6",
+      "gene": "IL6",
+      "fluid": "CSF",
+      "beta": 0.0142031949391468,
+      "mde_abs_log_or_80pct_nominal": 0.1586210747841038
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|KTEL1",
+      "soma_id": "X6467.65",
+      "protein": "KTEL1",
+      "gene": "POGLUT1",
+      "fluid": "CSF",
+      "beta": 0.017540496686944,
+      "mde_abs_log_or_80pct_nominal": 0.0885649174926174
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|LTF",
+      "soma_id": "X14755.4",
+      "protein": "LTF",
+      "gene": "LTF",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|NET4",
+      "soma_id": "X3327.27",
+      "protein": "NET4",
+      "gene": "NTN4",
+      "fluid": "CSF",
+      "beta": 0.4936364002704257,
+      "mde_abs_log_or_80pct_nominal": 1.3160060605564918
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|NovH",
+      "soma_id": "X2737.22",
+      "protein": "NovH",
+      "gene": "CCN3",
+      "fluid": "CSF",
+      "beta": -0.0178853007879668,
+      "mde_abs_log_or_80pct_nominal": 0.0839523326984932
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|PCSK9",
+      "soma_id": "X5231.79",
+      "protein": "PCSK9",
+      "gene": "PCSK9",
+      "fluid": "CSF",
+      "beta": 0.1250448283427614,
+      "mde_abs_log_or_80pct_nominal": 0.2318152986642424
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|PILRA-deltaTM",
+      "soma_id": "X6402.8",
+      "protein": "PILRA-deltaTM",
+      "gene": "PILRA",
+      "fluid": "CSF",
+      "beta": 0.1431079248171262,
+      "mde_abs_log_or_80pct_nominal": 0.1139781977572463
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|PILRA-M14",
+      "soma_id": "X10816.150",
+      "protein": "PILRA-M14",
+      "gene": "PILRA",
+      "fluid": "CSF",
+      "beta": 0.1392939382928361,
+      "mde_abs_log_or_80pct_nominal": 0.1113994395087739
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|PLA2R",
+      "soma_id": "X10916.44",
+      "protein": "PLA2R",
+      "gene": "PLA2R1",
+      "fluid": "CSF",
+      "beta": 0.0207397411589458,
+      "mde_abs_log_or_80pct_nominal": 0.0348887734120851
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|PPAC",
+      "soma_id": "X3858.5",
+      "protein": "PPAC",
+      "gene": "ACP1",
+      "fluid": "CSF",
+      "beta": -0.0145451518520055,
+      "mde_abs_log_or_80pct_nominal": 0.0497403161745051
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|PRSS8",
+      "soma_id": "X15513.108",
+      "protein": "PRSS8",
+      "gene": "PRSS8",
+      "fluid": "CSF",
+      "beta": -0.0775351582352242,
+      "mde_abs_log_or_80pct_nominal": 0.2170573084370885
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|PSMP",
+      "soma_id": "X8080.24",
+      "protein": "PSMP",
+      "gene": "MSMP",
+      "fluid": "CSF",
+      "beta": 0.0098059351114175,
+      "mde_abs_log_or_80pct_nominal": 0.1138526665011255
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|PTPA",
+      "soma_id": "X24717.26",
+      "protein": "PTPA",
+      "gene": "PTPA",
+      "fluid": "CSF",
+      "beta": 0.0634339102748388,
+      "mde_abs_log_or_80pct_nominal": 0.1372630621884753
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|SERPIND1",
+      "soma_id": "X3316.58",
+      "protein": "SERPIND1",
+      "gene": "SERPIND1",
+      "fluid": "CSF",
+      "beta": -0.0951755936300157,
+      "mde_abs_log_or_80pct_nominal": 0.1906261685072802
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|TECTB",
+      "soma_id": "X21549.144",
+      "protein": "TECTB",
+      "gene": "TECTB",
+      "fluid": "CSF",
+      "beta": 0.0216687882556409,
+      "mde_abs_log_or_80pct_nominal": 0.0572941642230779
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|Tenascin",
+      "soma_id": "X2728.62",
+      "protein": "Tenascin",
+      "gene": "TNC",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|TFPI",
+      "soma_id": "X3336.50",
+      "protein": "TFPI",
+      "gene": "TFPI",
+      "fluid": "CSF",
+      "beta": -0.1379610441383557,
+      "mde_abs_log_or_80pct_nominal": 0.3599034991209397
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|TIMD3",
+      "soma_id": "X11481.25",
+      "protein": "TIMD3",
+      "gene": "HAVCR2",
+      "fluid": "CSF",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|TLR1:ECD",
+      "soma_id": "X16324.38",
+      "protein": "TLR1:ECD",
+      "gene": "TLR1",
+      "fluid": "CSF",
+      "beta": 0.0054101357029715,
+      "mde_abs_log_or_80pct_nominal": 0.0344944257356856
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|TM190",
+      "soma_id": "X10442.1",
+      "protein": "TM190",
+      "gene": "TMEM190",
+      "fluid": "CSF",
+      "beta": 0.0034785151818312,
+      "mde_abs_log_or_80pct_nominal": 0.0525865515470883
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "CSF|TPSNR",
+      "soma_id": "X6364.7",
+      "protein": "TPSNR",
+      "gene": "TAPBPL",
+      "fluid": "CSF",
+      "beta": -0.0013766492201172,
+      "mde_abs_log_or_80pct_nominal": 0.0298701324258242
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|AMD",
+      "soma_id": "X5620.13",
+      "protein": "AMD",
+      "gene": "PAM",
+      "fluid": "PLASMA",
+      "beta": -0.0723027349702271,
+      "mde_abs_log_or_80pct_nominal": 0.2441465237121297
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|EphB4",
+      "soma_id": "X15530.33",
+      "protein": "EphB4",
+      "gene": "EPHB4",
+      "fluid": "PLASMA",
+      "beta": -0.062523151350574,
+      "mde_abs_log_or_80pct_nominal": 0.4878330002690365
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|Epo",
+      "soma_id": "X5813.58",
+      "protein": "Epo",
+      "gene": "EPO",
+      "fluid": "PLASMA",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|FBLN3",
+      "soma_id": "X8480.29",
+      "protein": "FBLN3",
+      "gene": "EFEMP1",
+      "fluid": "PLASMA",
+      "beta": 0.1651906415283329,
+      "mde_abs_log_or_80pct_nominal": 0.4171014898549724
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|HTRA1",
+      "soma_id": "X15594.47",
+      "protein": "HTRA1",
+      "gene": "HTRA1",
+      "fluid": "PLASMA",
+      "beta": 0.2269929431039433,
+      "mde_abs_log_or_80pct_nominal": 0.7265022567718122
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|NMT1",
+      "soma_id": "X5196.7",
+      "protein": "NMT1",
+      "gene": "NMT1",
+      "fluid": "PLASMA",
+      "beta": 0.4465147975688698,
+      "mde_abs_log_or_80pct_nominal": 1.0118692684331814
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|PILRA-deltaTM",
+      "soma_id": "X6402.8",
+      "protein": "PILRA-deltaTM",
+      "gene": "PILRA",
+      "fluid": "PLASMA",
+      "beta": 0.0162269644663189,
+      "mde_abs_log_or_80pct_nominal": 0.0281529122230508
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|PILRA-M14",
+      "soma_id": "X10816.150",
+      "protein": "PILRA-M14",
+      "gene": "PILRA",
+      "fluid": "PLASMA",
+      "beta": 0.0270787363624918,
+      "mde_abs_log_or_80pct_nominal": 0.034756237590521
+    },
+    {
+      "outcome_source": "BBJ_ONLY_EAS",
+      "exposure_id": "PLASMA|WBP2",
+      "soma_id": "X17698.15",
+      "protein": "WBP2",
+      "gene": "WBP2",
+      "fluid": "PLASMA",
+      "beta": null,
+      "mde_abs_log_or_80pct_nominal": null
     }
   ]
 }
