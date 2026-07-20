@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Redraw the three main figures from aggregate public results only."""
+"""Redraw source-independent publication displays from aggregate results only.
+
+Figures 1, 2 and 4 are redrawn from released aggregate values. For Figure 3,
+the script reproduces the qualification-state and prior-sensitivity components;
+exact regional association panels require provider summary data that are not
+redistributed.
+"""
 
 from __future__ import annotations
 
@@ -20,6 +26,7 @@ BLUE = "#1769AA"
 ORANGE = "#D97706"
 RED = "#B91C1C"
 GREY = "#777777"
+TEAL = "#009E73"
 
 
 def as_bool(values: pd.Series) -> np.ndarray:
@@ -146,12 +153,103 @@ def figure3(payload: dict) -> None:
     save(fig, "Figure_3_locus_evidence_and_prior_sensitivity")
 
 
+def figure4(payload: dict) -> None:
+    data = pd.DataFrame(payload["assay_precision"])
+    fig = plt.figure(figsize=(10.8, 8.0))
+    grid = fig.add_gridspec(
+        2, 2, left=0.085, right=0.97, top=0.85, bottom=0.105,
+        height_ratios=[1.0, 1.1], hspace=0.36, wspace=0.16,
+    )
+    fig.suptitle(
+        "Conditional precision separates near-null estimates from information limits",
+        x=0.085, y=0.965, ha="left", fontsize=15, weight="bold",
+    )
+    fig.text(
+        0.085, 0.925,
+        "Assay-level 80% MDEs are descriptive source-scale quantities—not equivalence margins or common concentration effects",
+        ha="left", fontsize=9.2, color=GREY,
+    )
+    sources = [
+        ("HERMES_NO_UKB", BLUE, "a  Primary HERMES no-UKB HF"),
+        ("BBJ_ONLY_EAS", ORANGE, "b  Post hoc BBJ chronic HF"),
+    ]
+    for ax, (source, color, title) in zip(
+        [fig.add_subplot(grid[0, 0]), fig.add_subplot(grid[0, 1])], sources
+    ):
+        sub = data[data["outcome_source"] == source].dropna(
+            subset=["mde_abs_log_or_80pct_nominal", "beta"]
+        ).copy()
+        sub["mde_abs_log_or_80pct_nominal"] = pd.to_numeric(
+            sub["mde_abs_log_or_80pct_nominal"]
+        )
+        sub["beta"] = pd.to_numeric(sub["beta"])
+        sub = sub.sort_values("mde_abs_log_or_80pct_nominal").reset_index(drop=True)
+        x = np.arange(1, len(sub) + 1)
+        mde = sub["mde_abs_log_or_80pct_nominal"].to_numpy(float)
+        beta = np.abs(sub["beta"].to_numpy(float))
+        ax.vlines(x, np.minimum(beta, mde), np.maximum(beta, mde), color="#B8B8B8", alpha=0.35, lw=0.8)
+        ax.scatter(x, mde, marker="s", s=25, color=color, label="Conditional 80% MDE")
+        ax.scatter(x, beta, marker="o", s=20, facecolor="white", edgecolor="#17324D", linewidth=0.9, label="Absolute MR estimate")
+        ax.set_yscale("log")
+        ax.set_title(f"{title}  (n={len(sub)} estimable assays)", loc="left", fontsize=10.5, weight="bold")
+        ax.set_xlabel("Assays ordered by conditional MDE")
+        ax.set_ylabel("Absolute log-odds magnitude\n(source-specific assay scale)")
+        ax.grid(axis="y", color="#E5E7EB", linewidth=0.7)
+        ax.legend(frameon=False, fontsize=7.4, loc="upper left")
+
+    ax = fig.add_subplot(grid[1, :])
+    keys = ["exposure_id", "soma_id"]
+    h = data[data["outcome_source"] == "HERMES_NO_UKB"][
+        keys + ["fluid", "protein", "gene", "mde_abs_log_or_80pct_nominal"]
+    ].rename(columns={"mde_abs_log_or_80pct_nominal": "hermes_mde"})
+    b = data[data["outcome_source"] == "BBJ_ONLY_EAS"][
+        keys + ["mde_abs_log_or_80pct_nominal"]
+    ].rename(columns={"mde_abs_log_or_80pct_nominal": "bbj_mde"})
+    paired = h.merge(b, on=keys, validate="one_to_one").dropna(
+        subset=["hermes_mde", "bbj_mde"]
+    )
+    paired["hermes_mde"] = pd.to_numeric(paired["hermes_mde"])
+    paired["bbj_mde"] = pd.to_numeric(paired["bbj_mde"])
+    fluid_colors = {"CSF": TEAL, "PLASMA": "#CC79A7"}
+    for fluid, sub in paired.groupby("fluid", sort=False):
+        ax.scatter(
+            sub["hermes_mde"], sub["bbj_mde"], s=34, alpha=0.72,
+            color=fluid_colors.get(str(fluid), GREY), edgecolor="white", linewidth=0.5,
+            label=f"{fluid} assay",
+        )
+    low = min(paired["hermes_mde"].min(), paired["bbj_mde"].min()) * 0.8
+    high = max(paired["hermes_mde"].max(), paired["bbj_mde"].max()) * 1.25
+    ax.plot([low, high], [low, high], color=GREY, linestyle="--", lw=1.0, label="Equal precision")
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlim(low, high)
+    ax.set_ylim(low, high)
+    ax.set_xlabel("HERMES conditional 80% MDE")
+    ax.set_ylabel("BBJ conditional 80% MDE")
+    ax.set_title("c  Matched-assay precision shift", loc="left", fontsize=10.5, weight="bold")
+    ax.grid(color="#E5E7EB", linewidth=0.7)
+    ratio = paired["bbj_mde"] / paired["hermes_mde"]
+    ax.text(
+        0.025, 0.95,
+        f"{int((ratio > 1).sum())}/{len(paired)} matched assays above identity\nMedian BBJ/HERMES MDE ratio = {ratio.median():.2f}",
+        transform=ax.transAxes, ha="left", va="top", fontsize=8.4, weight="bold",
+    )
+    ax.legend(frameon=False, loc="lower right", ncol=3, fontsize=7.6)
+    fig.text(
+        0.5, 0.025,
+        "Comparisons are paired within assay across HF outcomes. MDEs describe observed precision and do not establish equivalence or absence.",
+        ha="center", fontsize=8.4, color=GREY,
+    )
+    save(fig, "Figure_4_precision_interpretability")
+
+
 def main() -> None:
     payload = json.loads(DATA.read_text(encoding="utf-8"))
     figure1(payload)
     figure2(payload)
     figure3(payload)
-    print(f"Wrote Figures 1–3 to {OUT}")
+    figure4(payload)
+    print(f"Wrote Figures 1–4 aggregate displays to {OUT}")
 
 
 if __name__ == "__main__":
