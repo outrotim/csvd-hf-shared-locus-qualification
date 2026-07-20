@@ -2,7 +2,7 @@
 
 This repository contains the minimum code and aggregate derived results needed
 to inspect and reuse the principal Mendelian-randomization (MR) and
-colocalization definitions and to redraw the three main figures for the
+colocalization definitions and to redraw source-independent publication displays for the
 manuscript **“Heart-failure Mendelian randomization signals among cerebral
 small-vessel disease protein candidates did not meet prespecified shared-locus
 criteria.”**
@@ -19,18 +19,20 @@ artifact generated during the study.
   Simes aggregation and protein-family multiplicity control.
 - `scripts/run_shared_locus_test.R`: ABF/SuSiE routing, prespecified priors,
   PP3/PP4 criteria and explicit handling of the no-credible-set-pair state.
-- `scripts/reproduce_main_figures.py`: redraws Figures 1–3 from the released
-  aggregate results without accessing provider source files.
+- `scripts/reproduce_main_figures.py`: redraws Figures 1, 2 and 4, plus the
+  qualification-state and prior-sensitivity components of Figure 3, from the
+  released aggregate results without accessing provider source files.
 - `data/publication_results.json`: aggregate 51-protein screening states, three
   assay-specific regional evaluations, the Apo E2 prior-sensitivity grid and
-  the observed 55→56→51→48→3→0 evidence flow.
+  the observed 55→56→51→48→3→0 evidence flow, plus the 112-row assay-precision
+  display used for Figure 4.
 - `LICENSE`: BSD 3-Clause License for code.
 - `DATA_LICENSE.md`: CC BY 4.0 terms for the aggregate derived result file.
 
 ## Data availability
 
 The aggregate values needed to inspect the reported evidence states and redraw
-the main figures are openly available in `data/publication_results.json` under
+Figures 1, 2 and 4 and the qualification/prior components of Figure 3 are openly available in `data/publication_results.json` under
 CC BY 4.0. They contain no participant-level records, personal identifiers,
 credentials, local paths or full provider summary-statistic archives.
 
@@ -44,6 +46,12 @@ their terms. This repository does not redistribute HERMES, deCODE, WUSTL or
 BioBank Japan source archives, complete variant-level caches or LD-reference
 files. UK Biobank and controlled-access individual-level resources were not
 used in this release.
+
+The exact regional exposure-pQTL and HERMES-HF association panels in main-text
+Figure 3 require thousands of provider summary-statistic rows. Those rows are
+not included here because this minimal release does not expand the providers'
+redistribution scope. Readers may reconstruct those panels after obtaining the
+official source files under the original terms.
 
 ## Installation
 
