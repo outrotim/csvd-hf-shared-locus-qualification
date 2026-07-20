@@ -3,9 +3,9 @@
 This repository contains the minimum code and aggregate derived results needed
 to inspect and reuse the principal Mendelian-randomization (MR) and
 colocalization definitions and to redraw source-independent publication displays for the
-manuscript **“Heart-failure Mendelian randomization signals among cerebral
-small-vessel disease protein candidates did not meet prespecified shared-locus
-criteria.”**
+manuscript **“From Mendelian randomization signals to shared-locus
+qualification: testing cerebral small-vessel disease protein candidates in
+heart failure.”**
 
 The release is intentionally narrow. It is not a mirror of provider summary
 statistics and does not contain participant-level data, restricted data,
@@ -115,6 +115,6 @@ this repository.
 
 Citation details will be added after journal publication.
 
-> The authors. Heart-failure Mendelian randomization signals among cerebral
-> small-vessel disease protein candidates did not meet prespecified
-> shared-locus criteria. Manuscript under review.
+> The authors. From Mendelian randomization signals to shared-locus
+> qualification: testing cerebral small-vessel disease protein candidates in
+> heart failure. Manuscript under review.
